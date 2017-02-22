@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cd_item"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ripple_recy_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_msg_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:src="@drawable/top_ico" />
+
+        <TextView
+            android:id="@+id/item_msg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="测试 "
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

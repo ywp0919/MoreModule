@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF1B7AEA</color>
+    <color name="colorPrimaryDark">#FF1B7AEA</color>
+    <color name="colorAccent">#0ec28b</color>
+
+    <color name="textColorPrimary">#fff</color>
+    <color name="textColor_Gray">#6c6868</color>
+    <color name="textColor_Blue">#3d63fa</color>
+
+    <color name="lineColor_Gray">#8c8b8b</color>
+    <color name="textColor_Green">#0ec28b</color>
+    <color name="tool_background">#00000000</color>
+    <color name="recy_item_gray">#b4b3b3</color>
+</resources>

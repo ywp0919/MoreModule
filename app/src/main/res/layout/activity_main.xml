@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <!--
+                AppBarLayout跟它的名字一样，把容器类的组件全部作为AppBar。
+                    将AppBarLayout放在CoordinatorLayout中，就可以实现滚动效果。
+                    本例中，TabLayout在界面滚动时，随着Toolbar的逐渐隐藏，将占据Toolbar的位置，
+                        达到节省屏幕空间，界面动画效果的目的。
+            -->
+        <android.support.design.widget.AppBarLayout
+            app:layout_behavior="com.ywp.nice.behavior.FlingBehavior"
+            android:id="@+id/main_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--
+
+            属性解析：
+                app:theme：指定Toolbar的样式，包括ActionbarToggle和popupMenu的指示图标颜色
+                app:popupTheme：指定popupMenu溢出后的样式
+                app:title:    指定Toolbar中主Title的内容
+            -->
+
+            <!--
+                app:layout_scrollFlags的意思是：
+
+                    设置的layout_scrollFlags有如下几种选项：
+                        scroll: 所有想滚动出屏幕的view都需要设置这个flag- 没有设置这个flag的view将被固定在屏幕顶部。
+                        enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+                        enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，你的视图只能以最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+                        exitUntilCollapsed: 当视图会在滚动时，它一直滚动到设置的minHeight时完全隐藏。
+
+                需要注意的是，后面两种模式基本只有在CollapsingToolbarLayout才有用，
+                而前面两种模式基本是需要一起使用的，也就是说，这些flag的使用场景，基本已经固定了。
+            -->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+
+
+            <include layout="@layout/toolbar" />
+            <!-- <com.ywp.common.view.HeadToolbarView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+             </com.ywp.common.view.HeadToolbarView>-->
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_behavior="com.ywp.nice.behavior.FooterBehavior"
+            android:background="@color/lineColor_Gray"
+            app:layout_anchor="@+id/main_tab"
+            app:layout_anchorGravity="top" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom"
+            android:background="#dfdfdf"
+            app:layout_behavior="com.ywp.nice.behavior.FooterBehavior"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/textColor_Green"
+            app:tabTextColor="@color/textColor_Gray" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <include layout="@layout/navigation_layout" />
+
+
+</android.support.v4.widget.DrawerLayout>

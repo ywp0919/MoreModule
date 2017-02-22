@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/txt_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="带进度条显示的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/progress_dialog"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="只有标题的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/basic_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="有标题和消息的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/under_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="错误的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/error_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="成功的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/success_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+
+        <TextView
+            android:id="@+id/txt_5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="一条只有确定的警告提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/warning_confirm_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="可以取消和确定的警告提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/warning_cancel_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+        <TextView
+            android:id="@+id/txt_7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="可以带图片的提示"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/custom_img_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:text="点我呀" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

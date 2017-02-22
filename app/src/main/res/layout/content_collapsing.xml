@@ -1,0 +1,30 @@
+<!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor_Green"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.CollapsingActivity"
+    tools:showIn="@layout/activity_collapsing">-->
+    <!--<com.ywp.common.view.NoScrollListView-->
+        <!--android:id="@+id/lv_collapsing"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</com.ywp.common.view.NoScrollListView>-->
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/rv_collap"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+<!---->
+<!--</android.support.v4.widget.NestedScrollView>-->

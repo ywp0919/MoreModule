@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_pop_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="发起多人聊天"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor_Gray"
+        android:layout_marginTop="3dp"></View>
+
+    <LinearLayout
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_icon2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="面对面收款"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor_Gray"
+        android:layout_marginTop="3dp"></View>
+    <LinearLayout
+        android:id="@+id/menu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_item3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="加好友"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor_Gray"
+        android:layout_marginTop="3dp"></View>
+
+    <LinearLayout
+        android:id="@+id/menu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_icon4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="QQ 音乐"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor_Gray"
+        android:layout_marginTop="3dp"></View>
+
+    <LinearLayout
+        android:id="@+id/menu5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_icon5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="付款"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor_Gray"
+        android:layout_marginTop="3dp"></View>
+</LinearLayout>
