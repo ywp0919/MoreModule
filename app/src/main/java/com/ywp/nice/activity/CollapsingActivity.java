@@ -212,6 +212,7 @@ public class CollapsingActivity extends AppCompatActivity implements HttpListene
     }
 
     private void loadDatas(int mPage) {
+        //在这里测试下git的push
         //retrofit请求
         HttpMethods.getGankApi().loadGankPage(SIZE, mPage)
                 .subscribeOn(Schedulers.io())
